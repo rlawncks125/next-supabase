@@ -1,12 +1,24 @@
 # Qick start
+
 https://supabase.com/docs/guides/getting-started/quickstarts/nextjs
 
 # 문서
+
 https://supabase.com/docs/guides/getting-started/tutorials/with-nextjs?queryGroups=language&language=ts
 
+# Generating TypeScript Types
+
+https://supabase.com/docs/guides/api/rest/generating-types
+
+```sh
+npm i supabase@">=1.8.1" --save-dev
+
+npx supabase login
+
+supabase gen types typescript --project-id "project-id" > database.types.ts
+```
 
 # 설치 시 기본 설명
-
 
 <a href="https://demo-nextjs-with-supabase.vercel.app/">
   <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
