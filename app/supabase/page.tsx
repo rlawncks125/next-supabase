@@ -55,8 +55,7 @@ mutation insertNote($title : String!){
 `);
 
 export default function Page() {
-  const [text, setText] = useState<string>("");
-
+  // Query
   const { loading, error, data, refetch } =
     useQuery<FirstTestQuery>(QUERY_ALL_NOTES);
 
@@ -69,10 +68,14 @@ export default function Page() {
     }
   );
 
+  // Mutation
   const [mutation, { data: mutationData }] = useMutation<
     InsertNoteMutation,
     InsertNoteMutationVariables
   >(MUTATION_INSERT_NOTE);
+
+  // 확인용 트리거
+  const [text, setText] = useState<string>("");
 
   const onClickNewNote = async () => {
     if (text === "") return;
