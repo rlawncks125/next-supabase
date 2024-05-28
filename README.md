@@ -18,6 +18,20 @@ npx supabase login
 supabase gen types typescript --project-id "project-id" > database.types.ts
 ```
 
+# JavaScript Doc
+
+https://supabase.com/docs/reference/javascript/using-filters
+
+# GraphQL
+
+[Apollo 주소](https://www.apollographql.com/docs/react/get-started)
+
+```sh
+// 설치
+npm install @apollo/client graphql
+
+```
+
 # 설치 시 기본 설명
 
 <a href="https://demo-nextjs-with-supabase.vercel.app/">

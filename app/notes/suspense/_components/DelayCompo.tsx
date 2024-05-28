@@ -8,7 +8,12 @@ const delayFetch = (time: number): Promise<any> => {
   return new Promise((res, rej) => {
     setTimeout(async () => {
       const supabase = createClient();
-      const { data: notes } = await supabase.from("notes").select();
+      // const { data: notes } = await supabase.from("notes").select();
+
+      const { data: notes } = await supabase
+        .from("notes")
+        .select("title , id")
+        .eq("id", "2");
 
       res(notes);
     }, time);

@@ -7,10 +7,12 @@
     "supabase:gen": "supabase gen types typescript --project-id ezxkitaclufybidjpyzk > database.types.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.4",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
     "autoprefixer": "10.4.17",
     "geist": "^1.2.1",
+    "graphql": "^16.8.1",
     "next": "latest",
     "postcss": "8.4.33",
     "react": "18.2.0",
