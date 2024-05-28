@@ -30,6 +30,11 @@ https://supabase.com/docs/reference/javascript/using-filters
 // 설치
 npm install @apollo/client graphql
 
+// codegen
+npm install --save-dev @graphql-codegen/cli @graphql-codegen/client-preset
+
+// @graphql-typed-document-node/core
+
 ```
 
 # 설치 시 기본 설명

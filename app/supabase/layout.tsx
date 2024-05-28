@@ -1,5 +1,5 @@
 "use client";
-import apolloClient from "@/utils/supabase-apllo/apollo";
+import apolloClient from "@/utils/GraphQL/apollo";
 import { ApolloProvider } from "@apollo/client";
 import React from "react";
 

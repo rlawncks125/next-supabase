@@ -36,7 +36,7 @@ import { createClient } from "../supabase/client";
 // });
 
 const httpLink = createHttpLink({
-  uri: "https://ezxkitaclufybidjpyzk.supabase.co/graphql/v1",
+  uri: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/graphql/v1`,
 });
 
 const authLink = setContext(async (_, { headers }) => {
